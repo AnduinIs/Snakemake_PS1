@@ -53,6 +53,8 @@ snakemake --cores 4 -s Snakemake_group1.smk --rerun-incomplete --latency-wait 12
 ###### 2运行过程中所有的权限问题和下载问题别找老子
 
 
+![图片名称](file:///C:/Users/16114/Documents/WeChat%20Files/wxid_5abr4f8fm2dl21/FileStorage/File/2023-03/dag(1).svg) 
+
 `<hello world>`
 
 Our group first discussed about the functions we need to run in the snakemake script. We want to reproduce the whole process by which starts with downloading the sample sequence and reference sequence. Then TrimmomaticPE function is used to remove low quality sequences. Next, use bowtie2 to align the reads to the reference genome, generating sam files. After that, convert the sam file to bam file in a bid to decrease the file size for future analysis. The whole flow chart of our workflow has been uploaded to the group page as dag.svg file. 
