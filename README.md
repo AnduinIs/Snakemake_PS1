@@ -46,7 +46,7 @@ result_dir=["my-genome-data-bucket"]         #This is the name of your S3 bucket
 snakemake --cores -s Snakemake_group1.smk --rerun-incomplete --latency-wait 120 --use-singularity
 ```
 
-* You can see some `.txt` files are generated if your final results have been successfully uploaded onto your `s3 bucket`. *
+* You can see some `.txt` files are generated if your final results have been successfully uploaded onto your `s3 bucket`. 
 * I wish you success ba.  -Love from China
 
 ## 3. Results
