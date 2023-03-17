@@ -2,7 +2,7 @@
 
 
 
-## 1. Preparation：access，downloads，Update，configuration
+## 1. Preparation：Access Downloads Update Configuration
 ##### Get administrator access and pre-downloads
 
 * The first step is to upload the provided `snakefile` and `singularity.py` onto your s3 bucket. 
@@ -33,9 +33,9 @@ aws s3 cp s3://Your-bucker-name/Snakemake_group1.smk .
 * *__Then you should change the environment variables listed at the beginning of `Snakemake_group1.smk` based on your instance.__*
 
 ```ruby
-trail_accession=["SRR2589044","SRR2584866"]
-project_dir=["/home/ubuntu"]
-result_dir=["my-genome-data-bucket"]
+trail_accession=["SRR2589044","SRR2584866"]  #This is your desired experiment analysis data.
+project_dir=["/home/ubuntu"]                 #This is your working directory which runs smk pipeline and store the process files.
+result_dir=["my-genome-data-bucket"]         #This is the name of your S3 bucket that you want to store the vcf files the snakemake outputs. 
 ```
 
     * The above is the settings for our use, you can change the accession number to other samples from Lenski's experiment. The `result_dir` refers to your `s3 bucket` name.*
@@ -50,7 +50,9 @@ snakemake --cores -s Snakemake_group1.smk --rerun-incomplete --latency-wait 120 
 * I wish you success ba.  -Love from China
 
 ## 3. Results
-
+##### Attention:
+ The files generated in the process of snakemake will not be deleted automatically.  
+ The user can decide whether to keep them or delete them.
 ![DAG workflow](https://github.com/AnduinIs/Snakemake_PS1/blob/main/dag(1).svg) 
 
 ## 4. Experience
