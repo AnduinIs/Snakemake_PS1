@@ -47,7 +47,8 @@ snakemake --cores -s Snakemake_group1.smk --rerun-incomplete --latency-wait 120 
 ```
 
 * You can see some `.txt` files are generated if your final results have been successfully uploaded onto your `s3 bucket`. *
-* __ I wish you success ba.__ -Love from China*
+* I wish you success ba.  
+*       -Love from China*
 
 ## 3. Results
 
