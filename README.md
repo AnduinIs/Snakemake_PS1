@@ -53,3 +53,6 @@ snakemake --cores -s Snakemake_group1.smk --rerun-incomplete --latency-wait 120 
 
 ![DAG workflow](https://github.com/AnduinIs/Snakemake_PS1/blob/main/dag(1).svg) 
 
+## 4. Experience
+![  ](https://pic1.zhimg.com/80/v2-610a1e24619d83f34cdb921bfbb83a2c_720w.webp)
+![  ](https://pic4.zhimg.com/80/v2-7b43ef9fdc58b02dd1c0dbbc1623dc8b_720w.webp)
