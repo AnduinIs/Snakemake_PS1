@@ -2,16 +2,23 @@
 =
 
 
-1\下载依赖文件：singularity，docker，
+1\下载依赖文件：singularity，docker，aws-cli
+```
 snap install snakemake &&\            #下载snakemake
 snap install docker  && \             #下载docker
 snap install aws-cli --classic   && \ #下载aws-cli
+```
 
 2\获得管理员权限
 
+3\singluarity.py,snakefie,上传到S3
 
 配置环境变量：accession 和 project——dir来适应不同的user的工作环境。
-2\使用了singularity和docker
+3\使用了singularity和docker
+
+4\
+
+
 
 `<hello world>`
 
