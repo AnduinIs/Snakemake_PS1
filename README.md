@@ -1,10 +1,10 @@
-#Learning experience
+# Learning experience
 =
 
-1\首先你打开s3: singluarity.py,snakefie,上传到S3
+## 1\首先你打开s3: singluarity.py,snakefie,上传到S3
 
 
-2\然后打开instance：获得管理员权限，下载依赖文件和环境：singularity，docker，aws-cli
+## 2\然后打开instance：获得管理员权限，下载依赖文件和环境：singularity，docker，aws-cli
 
 ```
 sudo su &&\
@@ -22,18 +22,18 @@ snap install aws-cli --classic   && \ #下载aws-cli
 
 
 
-3\然后跟着我做两部，第一部：把py文件复制到根目录，执行下列代码可以实现
+## 3\然后跟着我做两部，第一部：把py文件复制到根目录，执行下列代码可以实现
 
 ```
 aws s3 cp s3://my-genome-data-bucket/singularity.py /lib/python3/dist-packages/snakemake/deployment
 ```
-4\第二部，第二部复制smk脚本到instance上
+## 4\第二部，第二部复制smk脚本到instance上
 
 ```
 aws s3 cp /home/ubuntu/Snakemake_group1.smk s3://{your/own/path/storing}
 ```
 
-5\根据你的工作环境配置snakemake前面部分的环境变量，你可以通过下面的代码进行进入编辑
+## 5\根据你的工作环境配置snakemake前面部分的环境变量，你可以通过下面的代码进行进入编辑
 
 ```
 nano Snakemake_group1.smk
@@ -46,7 +46,7 @@ project_dir=["/home/ubuntu"]
 result_dir=["my-genome-data-bucket"]
 ```
 
-6\配置好就可以跑了
+## 6\配置好就可以跑了
 
 ```
 snakemake --cores 4 -s Snakemake_group1.smk --rerun-incomplete --latency-wait 120 --use-singularity
