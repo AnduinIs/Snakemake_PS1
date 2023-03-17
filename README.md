@@ -13,17 +13,39 @@ snap install docker  && \             #下载docker
 snap install aws-cli --classic   && \ #下载aws-cli
 ```
 
+
+
 [python developer](https://github.com/bilke/snakemake/commit/704e38a44e2e5e54af6af66090e0140b0d2ad075#diff-80031b2d8f48ac13272fca9b904be01b585b2e2764fe88d8e932790d241016bfR176-R185)
 
 
 
-
 配置环境变量：accession 和 project——dir来适应不同的user的工作环境。
-3\使用了singularity和docker
-
-4\
 
 
+
+3\然后跟着我做两部，第一部：把py文件复制到根目录，执行下列代码可以实现
+
+```
+aws s3 cp s3://my-genome-data-bucket/singularity.py /lib/python3/dist-packages/snakemake/deployment
+```
+4\第二部，第二部复制smk脚本到instance上
+
+```
+aws s3 cp /home/ubuntu/Snakemake_group1.smk s3://{your/own/path/storing}
+```
+
+5\根据你的工作环境配置snakemake前面部分的环境变量，你可以通过下面的代码进行进入编辑
+
+```
+nano Snakemake_group1.smk
+```
+
+例如在本次实验中使用的环境变量有
+```
+trail_accession=["SRR2589044","SRR2584866"]
+project_dir=["/home/ubuntu"]
+result_dir=["my-genome-data-bucket"]
+```
 
 `<hello world>`
 
