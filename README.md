@@ -60,4 +60,8 @@ The user can decide whether to keep them or delete them.
 ## 4. Experience
 <img src="https://pic1.zhimg.com/80/v2-610a1e24619d83f34cdb921bfbb83a2c_720w.webp" width="300px">
 <img src="https://pic4.zhimg.com/80/v2-7b43ef9fdc58b02dd1c0dbbc1623dc8b_720w.webp" width="300px">
-<img src="https://github.com/AnduinIs/Snakemake_PS1/blob/main/ji.jpg">
+<img src="https://github.com/AnduinIs/Snakemake_PS1/blob/main/ji.jpg" width="300px">
+
+## 5. Contact
+If you encounter any problems, plz feel free to solve them by yourself or head towards chatGPT.
+JUST LIKE WHAT WE DID!
