@@ -53,7 +53,7 @@ snakemake --cores 4 -s Snakemake_group1.smk --rerun-incomplete --latency-wait 12
 ###### 2运行过程中所有的权限问题和下载问题别找老子
 
 
-![图片名称](file:///C:/Users/16114/Documents/WeChat%20Files/wxid_5abr4f8fm2dl21/FileStorage/File/2023-03/dag(1).svg) 
+![图片名称](https://github.com/AnduinIs/Snakemake_PS1/blob/main/dag(1).svg) 
 
 `<hello world>`
 
