@@ -18,7 +18,7 @@ aws s3 cp s3://Your-bucket-name/singularity.py /lib/python3/dist-packages/snakem
 ```
 
 * Because we have omitted the download and import of the configuration file, you will need to change the environment variables in the snakemake script we provided. <br />
-* ——You should first download it from your s3 bucket. ——*
+* __You should first download it from your s3 bucket.__*
 
 ```ruby
 aws s3 cp s3://Your-bucker-name/Snakemake_group1.smk . 
