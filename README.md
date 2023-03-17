@@ -37,9 +37,9 @@ nano Snakemake_group1.smk
 
 配置环境变量：accession 和 project——dir来适应不同的user的工作环境。 例如在本次实验中使用的环境变量有
 ```
-trail_accession=["SRR2589044","SRR2584866"]
-project_dir=["/home/ubuntu"]
-result_dir=["my-genome-data-bucket"]
+trail_accession=["SRR2589044","SRR2584866"]   #accession number你想要分析的在本次实验中
+project_dir=["/home/ubuntu"]                  #你的instance的工作路径，ubuntu是作者的user name  
+result_dir=["my-genome-data-bucket"]          #你的s3 bucket的名字，将会在这里存放分析的vcf文件
 ```
 
 #### 6\配置好就可以跑了
@@ -47,6 +47,10 @@ result_dir=["my-genome-data-bucket"]
 ```
 snakemake --cores 4 -s Snakemake_group1.smk --rerun-incomplete --latency-wait 120 --use-singularity
 ```
+
+## Attention：
+###### 1运行过程中的所有sam,bam会留存在instance的工作路径中并不会被自动清理，根据user的需要决定是否保存或者删除
+###### 2运行过程中所有的权限问题和下载问题别找老子
 
 
 `<hello world>`
