@@ -13,9 +13,9 @@ sudo su &&\
 sudo add-apt-repository -y ppa:apptainer/ppa &&\
 sudo apt install -y apptainer &&\          #download singularity
 aws configure &&\
-snap install  snakemake &&\                #download snakemake
-snap install  docker  && \                 #download docker
-snap install  aws-cli --classic   && \     #download aws-cli
+snap install snakemake &&\                #download snakemake
+snap install docker  && \                 #download docker
+snap install aws-cli --classic   && \     #download aws-cli
 ```
 * You should also configure your instance and make sure you can download and upload files from or onto your s3 bucket
 ****
