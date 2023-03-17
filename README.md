@@ -63,5 +63,4 @@ The user can decide whether to keep them or delete them.
 <img src="https://github.com/AnduinIs/Snakemake_PS1/blob/main/ji.jpg" width="300px">
 
 ## 5. Contact
-If you encounter any problems, plz feel free to solve them by yourself or head towards chatGPT.
-JUST LIKE WHAT WE DID!
+If you encounter any problems, plz feel free to contact Xin Yuze and Zhu Yi.
