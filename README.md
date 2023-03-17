@@ -2,7 +2,7 @@
 
 
 
-## 1. Preparation
+## 1. Preparation：access，downloads，Update，configuration
 ##### Get administrator access and pre-downloads
 
 * The first step is to upload the provided `snakefile` and `singularity.py` onto your s3 bucket. 
