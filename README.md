@@ -1,12 +1,6 @@
 # Learning experience
 
-```ruby
-@Override
-protected void onDestroy() {
-    EventBus.getDefault().unregister(this);
-    super.onDestroy();
-}
-```
+
 ## 1. Preparation
 * The first step is to upload the provided `snakefile` and `singularity.py` onto your s3 bucket. 
 * The you should open your AWS EC2 instance and install the required software.
