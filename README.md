@@ -55,5 +55,5 @@ snakemake --cores -s Snakemake_group1.smk --rerun-incomplete --latency-wait 120 
 
 ## 4. Experience
 <img src="https://pic1.zhimg.com/80/v2-610a1e24619d83f34cdb921bfbb83a2c_720w.webp" width="500px">
-<img src="https://pic4.zhimg.com/80/v2-7b43ef9fdc58b02dd1c0dbbc1623dc8b_720w.webp">
+<img src="https://pic4.zhimg.com/80/v2-7b43ef9fdc58b02dd1c0dbbc1623dc8b_720w.webp" width="500px">
 
