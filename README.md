@@ -37,7 +37,7 @@ project_dir=["/home/ubuntu"]
 result_dir=["my-genome-data-bucket"]
 ```
 
-    * The above it the settings for our use, you can change the accession number to other samples from Lenski's experiment. The `result_dir` refers to your `s3 bucket` name.*
+    * The above is the settings for our use, you can change the accession number to other samples from Lenski's experiment. The `result_dir` refers to your `s3 bucket` name.*
 
 ## 2. Running the snakefile
 * Using the following code to run your `snakefile`.
@@ -46,7 +46,7 @@ result_dir=["my-genome-data-bucket"]
 snakemake --cores -s Snakemake_group1.smk --rerun-incomplete --latency-wait 120 --use-singularity
 ```
 
-* You can see some `.txt` files are generated if your final results have been successfully uploaded onto your `s3 bucket`.
+* You can see some `.txt` files are generated if your final results have been successfully uploaded onto your `s3 bucket`. *
 
 
 ![DAG workflow](https://github.com/AnduinIs/Snakemake_PS1/blob/main/dag(1).svg) 
