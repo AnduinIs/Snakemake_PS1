@@ -50,7 +50,7 @@ snakemake --cores -s Snakemake_group1.smk --rerun-incomplete --latency-wait 120 
 * I wish you success ba.  -Love from China
 
 ## 3. Results
-##### Attention:
+### Attention:
 The files generated in the process of snakemake will not be deleted automatically.  
 The user can decide whether to keep them or delete them.
 ![DAG workflow](https://github.com/AnduinIs/Snakemake_PS1/blob/main/dag(1).svg) 
