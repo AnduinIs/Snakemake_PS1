@@ -48,7 +48,7 @@ result_dir=["my-genome-data-bucket"]         #This is the name of your S3 bucket
 ```ruby
 snakemake --cores -s Snakemake_group1.smk --rerun-incomplete --latency-wait 120 --use-singularity
 ```
-* Attention: when snakemake file is running the following code. It is likely to report an error due that the reference data website is not well-maintained.
+* Attention: When snakemake file is running the following code, it is likely to report an error due that the reference data website is not well-maintained.
 So we recommond the user to download the reference genome manually from our repository.
 ```
 "curl -o ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/017/985/GCA_000017985.1_ASM1798v1/GCA_000017985.1_ASM1798v1_genomic.fna.gz > {project_dir}/ecoli_rel606.fasta.gz"
