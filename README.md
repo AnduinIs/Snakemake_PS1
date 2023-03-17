@@ -48,6 +48,11 @@ result_dir=["my-genome-data-bucket"]         #This is the name of your S3 bucket
 ```ruby
 snakemake --cores -s Snakemake_group1.smk --rerun-incomplete --latency-wait 120 --use-singularity
 ```
+* Attention: when snakemake file is running the following code. It is likely to report an error due that the reference data website is not well-maintained.
+So we recommond the user to download the reference genome manually from our repository.
+```
+"curl -o ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/017/985/GCA_000017985.1_ASM1798v1/GCA_000017985.1_ASM1798v1_genomic.fna.gz > {project_dir}/ecoli_rel606.fasta.gz"
+```
 
 * You can see some `.txt` files are generated if your final results have been successfully uploaded onto your `s3 bucket`. 
 * I wish you success ba.    -Love from China
@@ -63,6 +68,7 @@ The user can decide whether to keep them or delete them.
 ## 4. Development Experience
 
 Please turn to the uploaded [Experience file](https://github.com/AninneX/PS1-Supplement/blob/main/Experience.md)
+
 
 
 
