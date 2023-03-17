@@ -69,6 +69,7 @@ Please turn to the uploaded [Experience file](https://github.com/AninneX/PS1-Sup
 ## 5. Feeling
 <img src="https://pic1.zhimg.com/80/v2-610a1e24619d83f34cdb921bfbb83a2c_720w.webp" width="300px">
 <img src="https://pic4.zhimg.com/80/v2-7b43ef9fdc58b02dd1c0dbbc1623dc8b_720w.webp" width="200px">
+<img src="https://github.com/AninneX/PS1-Supplement/blob/main/ji.jpg" width="300px">
 
 ## 6. Contact
 If you encounter any problems, plz feel free to contact me via QQ`1043297994`.
