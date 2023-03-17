@@ -5,7 +5,7 @@
 ## 1. Preparation：Access\Downloads\Update\Configuration
 ##### Get administrator access and pre-downloads
 
-* The first step is to upload the provided `snakefile` and `singularity.py` onto your s3 bucket. 
+* The first step is to upload the provided `snakefile` and `singularity.py` (both stored at this repository)onto your s3 bucket. 
 * The you should open your AWS EC2 instance and __*install the required software*__.
 ```ruby
 
