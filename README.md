@@ -4,10 +4,11 @@
 ## 1\首先你打开s3: singluarity.py,snakefie,上传到S3
 
 
-## 2\然后打开instance：获得管理员权限，下载依赖文件和环境：singularity，docker，aws-cli
+## 2\然后打开instance：获得管理员权限（sudo su），下载依赖文件和环境：singularity，docker，aws-cli
 
 ```
 sudo su &&\
+aws configure && \                    #输入密钥完成授权
 snap install snakemake &&\            #下载snakemake
 snap install docker  && \             #下载docker
 snap install aws-cli --classic   && \ #下载aws-cli
