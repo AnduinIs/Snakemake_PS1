@@ -18,13 +18,13 @@ aws s3 cp s3://Your-bucket-name/singularity.py /lib/python3/dist-packages/snakem
 ```
 
 * Because we have omitted the download and import of the configuration file, you will need to change the environment variables in the snakemake script we provided. <br />
-* __You should first download it from your s3 bucket.__*
+* __*You should first download it from your s3 bucket.*__
 
 ```ruby
 aws s3 cp s3://Your-bucker-name/Snakemake_group1.smk . 
 ```
 
-* You should change the variables listed at the beginning of `Snakemake_group1.smk` based on your instance.*
+* *__Then you should change the environment variables listed at the beginning of `Snakemake_group1.smk` based on your instance.__*
 
 ```ruby
 trail_accession=["SRR2589044","SRR2584866"]
