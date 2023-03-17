@@ -1,5 +1,6 @@
 # Learning experience
-=
+
+## Guide for running preparation
 
 #### 1\首先你打开s3，并将这个repository中的 singluarity.py和Snakemake_group1.smk,上传到你的S3中
 
@@ -55,7 +56,38 @@ snakemake --cores 4 -s Snakemake_group1.smk --rerun-incomplete --latency-wait 12
 
 ![图片名称](https://github.com/AnduinIs/Snakemake_PS1/blob/main/dag(1).svg) 
 
-`<hello world>`
+y##1. Preparation
+* The first step is to upload the provided `snakefile` and `singularity.py` onto your s3 bucket. 
+* The you should open your AWS EC2 instance and install the required software.
+```
+sudo su &&\
+snap install snakemake &&\            #download snakemake
+snap install docker  && \             #download docker
+snap install aws-cli --classic   && \ #download aws-cli
+```
+    * You should also configure your instance and make sure you can download and upload files from or onto your s3 bucket
+* Due to the version issue of using `singularity` in `snakemake`, you should replace the original `singularity.py` file with the modified version provided by us. We found the solution for this issue from [bilke](https://github.com/bilke/snakemake/commit/704e38a44e2e5e54af6af66090e0140b0d2ad075#diff-80031b2d8f48ac13272fca9b904be01b585b2e2764fe88d8e932790d241016bfR176-R185). The following code can solve this problem.
+```
+aws s3 cp s3://Your-bucket-name/singularity.py /lib/python3/dist-packages/snakemake/deployment
+```
+* After that you may need to slightly change the `snakefile` provided by us. You should first download it from your s3 bucket.
+```
+aws s3 cp s3://Your-bucker-name/Snakemake_group1.smk . 
+```
+* You should change the variables listed at the beginning of `Snakemake_group1.smk` based on your instance.
+```
+trail_accession=["SRR2589044","SRR2584866"]
+project_dir=["/home/ubuntu"]
+result_dir=["my-genome-data-bucket"]
+```
+    * The above it the settings for our use, you can change the accession number to other samples from Lenski's experiment. The `result_dir` refers to your `s3 bucket` name.
+
+##2. Running the snakefile
+* Using the following code to run your `snakefile`.
+```
+snakemake --cores -s Snakemake_group1.smk --rerun-incomplete --latency-wait 120 --use-singularity
+```
+* You can see some `.txt` files are generated if your final results have been successfully uploaded onto your `s3 bucket`.
 
 Our group first discussed about the functions we need to run in the snakemake script. We want to reproduce the whole process by which starts with downloading the sample sequence and reference sequence. Then TrimmomaticPE function is used to remove low quality sequences. Next, use bowtie2 to align the reads to the reference genome, generating sam files. After that, convert the sam file to bam file in a bid to decrease the file size for future analysis. The whole flow chart of our workflow has been uploaded to the group page as dag.svg file. 
 
