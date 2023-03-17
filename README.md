@@ -1,10 +1,10 @@
 # Learning experience
 =
 
-## 1\首先你打开s3: singluarity.py,snakefie,上传到S3
+## 1\首先你打开s3，并将这个repository中的 singluarity.py和Snakemake_group1.smk,上传到你的S3中
 
 
-## 2\然后打开instance：获得管理员权限（sudo su），下载依赖文件和环境：singularity，docker，aws-cli
+## 2\然后打开instance：获得管理员权限（sudo su）并输入密钥，下载依赖文件和环境：singularity，docker，aws-cli
 
 ```
 sudo su &&\
@@ -15,19 +15,14 @@ snap install aws-cli --classic   && \ #下载aws-cli
 ```
 
 
-
-[python developer](https://github.com/bilke/snakemake/commit/704e38a44e2e5e54af6af66090e0140b0d2ad075#diff-80031b2d8f48ac13272fca9b904be01b585b2e2764fe88d8e932790d241016bfR176-R185)
-
-
-
-
-
-
 ## 3\然后跟着我做两部，第一部：把py文件复制到根目录，执行下列代码可以实现
 
 ```
 aws s3 cp s3://my-genome-data-bucket/singularity.py /lib/python3/dist-packages/snakemake/deployment
 ```
+这一步中的python脚本由亲爱的Lars Bilke提供，爱来自中国\
+
+Link：[python developer](https://github.com/bilke/snakemake/commit/704e38a44e2e5e54af6af66090e0140b0d2ad075#diff-80031b2d8f48ac13272fca9b904be01b585b2e2764fe88d8e932790d241016bfR176-R185)
 ## 4\第二部，第二部复制smk脚本到instance上
 
 ```
