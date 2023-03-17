@@ -36,7 +36,7 @@ aws s3 cp s3://Your-bucker-name/Snakemake_group1.smk .
 * *__Then you should change the environment variables listed at the beginning of `Snakemake_group1.smk` based on your instance.__*
 
 ```ruby
-trail_accession=["SRR2589044","SRR2584866"]  #This is your desired experiment analysis data.
+trail_accession=["SRR2589044","SRR2584866"]  #This is your desired experiment data.
 project_dir=["/home/ubuntu"]                 #This is your working directory which runs smk pipeline and store the process files.
 result_dir=["my-genome-data-bucket"]         #This is the name of your S3 bucket that you want to store the vcf files the snakemake outputs. 
 ```
@@ -69,6 +69,6 @@ Please turn to the uploaded [Experience file](https://github.com/AninneX/PS1-Sup
 ## 5. Feeling
 <img src="https://pic1.zhimg.com/80/v2-610a1e24619d83f34cdb921bfbb83a2c_720w.webp" width="300px">
 <img src="https://pic4.zhimg.com/80/v2-7b43ef9fdc58b02dd1c0dbbc1623dc8b_720w.webp" width="200px">
-<img src="https://github.com/AninneX/PS1-Supplement/blob/main/ji.jpg" width="300px">
+
 ## 6. Contact
 If you encounter any problems, plz feel free to contact me via QQ`1043297994`.
