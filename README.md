@@ -19,7 +19,6 @@ snap install aws-cli --classic   && \ #下载aws-cli
 
 
 
-配置环境变量：accession 和 project——dir来适应不同的user的工作环境。
 
 
 
@@ -40,12 +39,19 @@ aws s3 cp /home/ubuntu/Snakemake_group1.smk s3://{your/own/path/storing}
 nano Snakemake_group1.smk
 ```
 
-例如在本次实验中使用的环境变量有
+配置环境变量：accession 和 project——dir来适应不同的user的工作环境。 例如在本次实验中使用的环境变量有
 ```
 trail_accession=["SRR2589044","SRR2584866"]
 project_dir=["/home/ubuntu"]
 result_dir=["my-genome-data-bucket"]
 ```
+
+6\配置好就可以跑了
+
+```
+snakemake --cores 4 -s Snakemake_group1.smk --rerun-incomplete --latency-wait 120 --use-singularity
+```
+
 
 `<hello world>`
 
