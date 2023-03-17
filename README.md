@@ -57,13 +57,15 @@ The user can decide whether to keep them or delete them.
 <br />
 ![DAG workflow](https://github.com/AnduinIs/Snakemake_PS1/blob/main/dag(1).svg) 
 
-## 4. Experience
+## 4. Development Experience
 
 Please turn to the uploaded [Experience file](https://github.com/AninneX/PS1-Supplement/blob/main/Experience.pdf)
 
+
+
+## 5. Feeling
 <img src="https://pic1.zhimg.com/80/v2-610a1e24619d83f34cdb921bfbb83a2c_720w.webp" width="300px">
 <img src="https://pic4.zhimg.com/80/v2-7b43ef9fdc58b02dd1c0dbbc1623dc8b_720w.webp" width="200px">
 
-
-## 5. Contact
-If you encounter any problems, plz feel free to contact Xin Yuze and Zhu Yi.
+## 6. Contact
+If you encounter any problems, plz feel free to contact me via QQ`1043297994`.
