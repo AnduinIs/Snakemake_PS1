@@ -2,7 +2,7 @@
 
 
 
-## 1. Preparation：Access Downloads Update Configuration
+## 1. Preparation：Access\Downloads\Update\Configuration
 ##### Get administrator access and pre-downloads
 
 * The first step is to upload the provided `snakefile` and `singularity.py` onto your s3 bucket. 
