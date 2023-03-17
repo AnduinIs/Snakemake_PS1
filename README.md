@@ -8,11 +8,14 @@
 * The first step is to upload the provided `snakefile` and `singularity.py` onto your s3 bucket. 
 * The you should open your AWS EC2 instance and __*install the required software*__.
 ```ruby
+
 sudo su &&\
+sudo add-apt-repository -y ppa:apptainer/ppa &&\
+sudo apt install -y apptainer &&\         #download singularity
 aws configure &&\
-snap install snakemake &&\            #download snakemake
-snap install docker  && \             #download docker
-snap install aws-cli --classic   && \ #download aws-cli
+snap install -y snakemake &&\             #download snakemake
+snap install -y docker  && \              #download docker
+snap install -y aws-cli --classic   && \  #download aws-cli
 ```
 * You should also configure your instance and make sure you can download and upload files from or onto your s3 bucket
 ****
@@ -59,7 +62,7 @@ The user can decide whether to keep them or delete them.
 
 ## 4. Development Experience
 
-Please turn to the uploaded [Experience file](https://github.com/AninneX/PS1-Supplement/blob/main/Experience.md)
+Please turn to the uploaded [Experience file](https://github.com/AninneX/PS1-Supplement/blob/main/Experience.pdf)
 
 
 
